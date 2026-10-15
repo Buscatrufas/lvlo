@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminar cuenta · Lvlo</title>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" type="image/png" href="/icons/favicon.png">
+<script src="/config.js"></script>
+<script src="/vendor/pocketbase.umd.js" defer></script>
+<script src="/borrar-cuenta.js" defer></script>
+</head>
+<body>
+<main class="wrap" style="padding-block:32px 64px;max-width:520px;display:grid;gap:14px">
+<h1 style="font-family:var(--f-display)">Eliminar tu cuenta de Lvlo</h1>
+<p>Al eliminar la cuenta borramos de inmediato tu correo, tu contraseña y todo tu progreso (personaje, hábitos, tareas, retos y metas). Las copias de seguridad se sobrescriben en un máximo de 30 días. No se puede deshacer.</p>
+<form id="del" class="auth" style="display:grid;gap:12px">
+  <label for="email">Correo de la cuenta<input id="email" type="email" autocomplete="email" required></label>
+  <label for="pass">Contraseña<input id="pass" type="password" autocomplete="current-password" required></label>
+  <p id="msg" class="err" role="status" hidden></p>
+  <button class="btn danger" type="submit">Eliminar mi cuenta definitivamente</button>
+</form>
+<p class="hint">¿No recuerdas la contraseña? Escribe desde el correo de tu cuenta a <b id="contact">hola@lvlo.app</b> pidiendo la eliminación y la haremos en un máximo de 30 días.</p>
+<p><a href="/privacidad.html#borrado">Política de privacidad</a></p>
+</main>
+</body>
+</html>

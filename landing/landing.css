@@ -1,0 +1,40 @@
+/* Landing de Lvlo. Usa los tokens y tipografías de /styles.css (los mismos que la app). */
+.l-wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.l-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px;flex-wrap:wrap}
+.l-mark{font-family:var(--f-display);font-weight:700;font-size:28px;letter-spacing:.02em}
+.l-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center;padding-block:40px 56px}
+.l-copy{display:grid;gap:18px;min-width:0}
+.l-eyebrow{margin:0;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--xp)}
+.l-hero h1{font-family:var(--f-display);font-weight:700;font-size:clamp(40px,7vw,72px);line-height:1}
+.l-lead{margin:0;font-size:18px;line-height:1.55;color:var(--muted);max-width:34em}
+.l-cta{justify-self:start;text-decoration:none;font-size:16px;padding:14px 20px}
+.l-card{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:grid;gap:14px;min-width:0}
+.l-card-top{display:flex;align-items:center;gap:14px}
+.l-card-top img{width:72px;height:72px}
+.l-card-top b{display:block;font-family:var(--f-display);font-size:22px}
+.l-card-top span{font-size:13px;color:var(--muted)}
+.l-stats{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.l-stats li{display:grid;grid-template-columns:1fr auto;gap:4px 10px;font-size:13px}
+.l-stats b{font-family:var(--f-display);color:var(--cat)}
+.l-stats i{grid-column:1/-1;display:block;height:6px;border-radius:3px;background:var(--cat)}
+.l-toast{margin:0;font-size:13px;font-weight:600;background:var(--fg);color:var(--bg);border-radius:10px;padding:10px 12px;justify-self:start}
+.l-feats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding-block:32px;border-top:1px solid var(--line)}
+.l-feats article{display:grid;gap:6px;align-content:start}
+.l-num{font-family:var(--f-display);font-size:40px;line-height:1;color:var(--xp)}
+.l-feats h2{font-size:17px}
+.l-feats p{margin:0;color:var(--muted);line-height:1.55}
+.l-form{max-width:520px;margin:24px auto 0;padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:16px;display:grid;gap:12px}
+.l-form h2{font-family:var(--f-display);font-size:28px}
+.l-form form{display:grid;gap:12px}
+.l-form .check-row{align-items:flex-start}
+.l-form .check-row input{flex:none;margin-top:2px}
+.l-form a{color:var(--fg)}
+.l-msg{margin:0;font-size:14px;font-weight:600}
+.l-msg.ok{color:var(--ok)} .l-msg.err{color:var(--danger)}
+.l-foot{padding-block:40px 32px;justify-content:center}
+@media (max-width:760px){
+  .l-hero{grid-template-columns:1fr;gap:32px;padding-block:16px 40px}
+  .l-feats{grid-template-columns:1fr;gap:22px}
+  .l-form{padding:20px}
+}
+.l-form .hint{font-size:14px}

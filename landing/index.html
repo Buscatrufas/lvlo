@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lvlo · Tu vida, con niveles</title>
+<meta name="description" content="Lvlo convierte tus hábitos y tareas en un juego: cada cosa que completas sube tus atributos y desbloquea retos más exigentes. Apúntate a la lista de espera.">
+<meta property="og:title" content="Lvlo · Tu vida, con niveles">
+<meta property="og:description" content="Hábitos, tareas y retos con niveles, atributos y avatar. Apúntate a la lista de espera.">
+<meta property="og:url" content="https://lvlo.app/">
+<meta property="og:image" content="https://lvlo.app/icons/icon-512.png">
+<meta name="theme-color" content="#EDF0F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10141C" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://lvlo.app/">
+<link rel="icon" type="image/png" href="/icons/favicon.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/landing.css">
+<script src="/config.js"></script>
+<script src="/landing.js" defer></script>
+</head>
+<body>
+<div class="l-wrap">
+  <header class="l-top">
+    <span class="l-mark">Lvlo</span>
+    <div class="chips" id="langs" role="group" aria-label="Idioma"></div>
+  </header>
+
+  <main>
+    <section class="l-hero">
+      <div class="l-copy">
+        <p class="l-eyebrow" data-i="eyebrow">Hábitos · Tareas · Retos</p>
+        <h1 data-i="h1">Tu vida, con niveles.</h1>
+        <p class="l-lead" data-i="lead">Lvlo convierte tus hábitos y tareas en un juego. Cada cosa que completas sube uno de tus siete atributos y, al subir de nivel, se abren retos más exigentes.</p>
+        <a class="btn gold l-cta" href="#apuntate" data-i="cta">Apúntate a la lista de espera</a>
+      </div>
+      <figure class="l-card" aria-hidden="true">
+        <div class="l-card-top">
+          <img src="/icons/avatar-muestra.svg" alt="" width="72" height="72">
+          <div><b data-i="lvl">Nivel 9</b><span data-i="title">Explorador</span></div>
+        </div>
+        <div class="bar"><span style="width:68%"></span></div>
+        <ul class="l-stats">
+          <li style="--cat:var(--a-fuerza)"><span data-i="a1">Fuerza</span><b>9</b><i style="width:64%"></i></li>
+          <li style="--cat:var(--a-cultura)"><span data-i="a2">Cultura</span><b>11</b><i style="width:78%"></i></li>
+          <li style="--cat:var(--a-inteligencia)"><span data-i="a3">Inteligencia</span><b>8</b><i style="width:57%"></i></li>
+          <li style="--cat:var(--a-talento)"><span data-i="a4">Talento</span><b>6</b><i style="width:43%"></i></li>
+          <li style="--cat:var(--a-espiritu)"><span data-i="a5">Espíritu</span><b>10</b><i style="width:71%"></i></li>
+        </ul>
+        <p class="l-toast"><span class="lvlup" data-i="toast">¡Nivel 9!</span> <span data-i="toast2">Nueva categoría: Viajes</span></p>
+      </figure>
+    </section>
+
+    <section class="l-feats">
+      <article><b class="l-num">7</b><h2 data-i="f1h">atributos que suben contigo</h2><p data-i="f1p">Fuerza, Cultura, Inteligencia, Ambición, Talento, Carisma y Espíritu. Leer sube tu Cultura; entrenar, tu Fuerza.</p></article>
+      <article><b class="l-num">13</b><h2 data-i="f2h">categorías que se desbloquean</h2><p data-i="f2p">De salud y lectura a viajes y creatividad, con unos 190 retos en cuatro rangos: de «lee una página» a «publica un libro».</p></article>
+      <article><b class="l-num">×1,5</b><h2 data-i="f3h">reto del día</h2><p data-i="f3p">Un reto diario con XP extra y un botón «Sorpréndeme» según el tiempo que tengas: 5 minutos, una tarde o un proyecto.</p></article>
+    </section>
+
+    <section class="l-form" id="apuntate">
+      <h2 data-i="formH">Sé de los primeros</h2>
+      <p class="hint" data-i="formP">Te avisaremos una sola vez cuando Lvlo esté disponible. Si quieres, también puedes probar la beta antes que nadie.</p>
+      <form id="wl" novalidate>
+        <label for="wl-email"><span data-i="email">Tu correo</span><input id="wl-email" type="email" autocomplete="email" required></label>
+        <label class="check-row" for="wl-beta"><input id="wl-beta" type="checkbox"> <span data-i="beta">Quiero probar la beta</span></label>
+        <label for="wl-platform" id="wl-platform-wrap" hidden><span data-i="platform">¿En qué móvil?</span>
+          <select id="wl-platform"><option value="android">Android</option><option value="iphone">iPhone</option><option value="otro" data-i="other">Otro</option></select></label>
+        <label class="check-row" for="wl-consent"><input id="wl-consent" type="checkbox" required> <span><span data-i="consent">Acepto recibir correos sobre el lanzamiento y la</span> <a href="/privacidad.html" data-i="privacy">política de privacidad</a>.</span></label>
+        <p id="wl-msg" class="l-msg" role="status" hidden></p>
+        <button class="btn" type="submit" data-i="submit">Avisadme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot l-foot">
+    <span>© Lvlo</span>
+    <a href="/privacidad.html" data-i="privacyF">Privacidad</a>
+    <a href="/aviso-legal.html" data-i="legal">Aviso legal</a>
+    <a href="/borrar-cuenta.html" data-i="delete">Eliminar cuenta</a>
+    <span id="contact">hola@lvlo.app</span>
+  </footer>
+</div>
+</body>
+</html>
